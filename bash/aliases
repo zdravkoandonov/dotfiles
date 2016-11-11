@@ -1,13 +1,26 @@
 alias reload_aliases='source ~/.bash/aliases'
 alias aliases='vim ~/.bash/aliases && reload_aliases'
 
+function mkcd()
+{
+  mkdir $1 && cd $1
+}
+
+alias ..='cd ..'
+alias ...='cd ../..'
+
 # git
 alias gs='git status' 
 alias gd='git diff'
 alias gpl='git pull'
 alias gp='git push'
 alias gl='git log'
+alias ga='git add'
 alias gc='git commit'
 alias gcs='git commit -S' # gpg signed
 alias gcm='git commit -m'
 alias gcsm='git commit -S -m' # gpg signed
+
+# cat syntax colored code files
+# use 'pygm filename'
+alias pygm='pygmentize -g'
