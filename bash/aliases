@@ -24,3 +24,6 @@ alias gcsm='git commit -S -m' # gpg signed
 # cat syntax colored code files
 # use 'pygm filename'
 alias pygm='pygmentize -g'
+
+# show progress on cp
+alias cp='rsync -avz'
